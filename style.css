@@ -1,6 +1,7 @@
 body {
   /* font-family: 'Arial', sans-serif; */
-  font-family: "Loma", sans-serif;
+  font-family: "Merriweather", serif;
+  font-weight: 300;
   margin: 0;
   padding: 40px;
   background-color: #f4f4f4;
@@ -8,50 +9,16 @@ body {
   line-height: 1.6;
 }
 
-.container {
-  max-width: 900px;
-  margin: 0 auto;
-  background-color: #fff;
-  padding: 20px 40px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-header {
-  text-align: center;
-  /* margin-bottom: 40px; */
-}
-
-header h1 {
-  font-family: "Merriweather", serif;
-  font-weight: 700;
-  font-size: 28px;
-  margin: 0;
-}
-
-header p,
-section p,
-.description {
-  font-family: "Merriweather", serif;
-  font-weight: 300;
-  /* Light */
-  /* ... other styles ... */
-}
-
+/* ------ over-rides ------ */
 h2,
 li strong {
-  font-family: "Merriweather", serif;
   font-weight: 400;
-}
-
-header p {
-  margin: 5px 0;
 }
 
 h2 {
   font-size: 22px;
   border-bottom: 2px solid #ddd;
-  /* padding-bottom: 10px; */
-  /* margin-top: 40px; */
+  margin: 5px 0px;
 }
 
 ul {
@@ -64,7 +31,7 @@ li {
 }
 
 a {
-  color: #007bff;
+  color: #4f4f4f;
   text-decoration: none;
 }
 
@@ -72,9 +39,40 @@ a:hover {
   text-decoration: underline;
 }
 
-#projectsList {
-  display: grid;
-  grid-template-columns: 400px 400px;
+/* ------------------------------ */
+
+/* ------ header ------ */
+header {
+  text-align: center;
+  /* margin-bottom: 40px; */
+}
+
+header h1 {
+  font-weight: 700;
+  font-size: 28px;
+  margin: 0;
+}
+
+header .info {
+  display: flex;
+  justify-content: space-around;
+  column-gap: 1rem;
+}
+
+header .info span a {
+  font-size: 14px;
+  color: rgb(79, 79, 79);
+  font-weight: 600;
+}
+
+/* ------------------------------ */
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 20px 40px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .expr_title {
@@ -87,7 +85,29 @@ a:hover {
 }
 
 .achievements {
-  font-family: "FreeSerif", serif;
   margin-top: 10px;
   padding-left: 20px;
+}
+
+.section-summary p,
+.section-skills p {
+  margin: 3px 0;
+}
+
+.section-summary p {
+  font-size: 14px;
+}
+
+#experienceList ul {
+  margin: 3px;
+}
+
+#experienceList ul li {
+  margin: 0;
+  font-size: 14px;
+}
+
+#projectsList {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
