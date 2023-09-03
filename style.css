@@ -1,0 +1,93 @@
+body {
+  /* font-family: 'Arial', sans-serif; */
+  font-family: "Loma", sans-serif;
+  margin: 0;
+  padding: 40px;
+  background-color: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 20px 40px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+header {
+  text-align: center;
+  /* margin-bottom: 40px; */
+}
+
+header h1 {
+  font-family: "Merriweather", serif;
+  font-weight: 700;
+  font-size: 28px;
+  margin: 0;
+}
+
+header p,
+section p,
+.description {
+  font-family: "Merriweather", serif;
+  font-weight: 300;
+  /* Light */
+  /* ... other styles ... */
+}
+
+h2,
+li strong {
+  font-family: "Merriweather", serif;
+  font-weight: 400;
+}
+
+header p {
+  margin: 5px 0;
+}
+
+h2 {
+  font-size: 22px;
+  border-bottom: 2px solid #ddd;
+  /* padding-bottom: 10px; */
+  /* margin-top: 40px; */
+}
+
+ul {
+  list-style-type: circle;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 20px;
+}
+
+a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+#projectsList {
+  display: grid;
+  grid-template-columns: 400px 400px;
+}
+
+.expr_title {
+  display: flex;
+  justify-content: space-between;
+}
+
+.description {
+  margin-top: 10px;
+}
+
+.achievements {
+  font-family: "FreeSerif", serif;
+  margin-top: 10px;
+  padding-left: 20px;
+}
