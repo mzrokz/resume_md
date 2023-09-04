@@ -154,17 +154,25 @@ const projectsList = document.getElementById("projectsList");
 
 for (let project of projects) {
   const listItem = document.createElement("li");
-  listItem.innerHTML = `
-        <strong>${project.title}</strong> - ${project.type} ${
-    project?.stars ? `⭐ ${project.stars}` : ""
-  } <br> 
-        ${project.date} ${
-    project?.githubLink ? `<a href="${project.githubLink}">[GitHub]</a>` : ""
-  } ${
-    project?.linkedinLink
-      ? `| <a href="${project.linkedinLink}">[Linkedin]</a>`
+  const title = `<span class="title">${project.title}</span> - <span>${project.type}</span>`;
+  const projectStars = `${
+    project?.stars ? `<span>⭐ ${project.stars}</span>` : ""
+  }`;
+
+  const githubLink = `${
+    project?.githubLink
+      ? `<a href="${project.githubLink}"><img class="icon" src="github.svg" alt="github" /></a>`
       : ""
-  }</a>
+  }`;
+  const linkedinLink = `${
+    project?.linkedinLink
+      ? `<a href="${project.linkedinLink}"><img class="icon" src="linkedin.svg" alt="linkedin" /></a>`
+      : ""
+  }`;
+
+  listItem.innerHTML = `${title} ${projectStars}
+         <br> 
+        ${project.date} ${githubLink} ${linkedinLink}
     `;
   projectsList.appendChild(listItem);
 }
